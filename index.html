@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации с валидацией</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="registration-form">
+            <h2>Регистрация</h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="username">Имя пользователя</label>
+                    <input type="text" id="username" name="username" placeholder="Введите имя пользователя">
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Введите email">
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="phone" name="phone" placeholder="Введите телефон">
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Пароль</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Введите пароль">
+                        <button type="button" class="toggle-password">👁️</button>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Подтверждение пароля</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль">
+                        <button type="button" class="toggle-password">👁️</button>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно при успешной регистрации -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-icon">✓</div>
+            <h3>Успешная регистрация!</h3>
+            <p>Ваш аккаунт был успешно создан.</p>
+            <button id="closeModal">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
