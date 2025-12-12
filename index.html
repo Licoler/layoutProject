@@ -1,62 +1,290 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма регистрации с валидацией</title>
+    <title>Wishbone+Partners</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="registration-form">
-            <h2>Регистрация</h2>
-            <form id="registrationForm">
-                <div class="input-group">
-                    <label for="username">Имя пользователя</label>
-                    <input type="text" id="username" name="username" placeholder="Введите имя пользователя">
-                    <span class="error-message"></span>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Введите email">
-                    <span class="error-message"></span>
-                </div>
-                <div class="input-group">
-                    <label for="phone">Телефон</label>
-                    <input type="text" id="phone" name="phone" placeholder="Введите телефон">
-                    <span class="error-message"></span>
-                </div>
-                <div class="input-group">
-                    <label for="password">Пароль</label>
-                    <div class="password-wrapper">
-                        <input type="password" id="password" name="password" placeholder="Введите пароль">
-                        <button type="button" class="toggle-password">👁️</button>
-                    </div>
-                    <span class="error-message"></span>
-                </div>
-                <div class="input-group">
-                    <label for="confirmPassword">Подтверждение пароля</label>
-                    <div class="password-wrapper">
-                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль">
-                        <button type="button" class="toggle-password">👁️</button>
-                    </div>
-                    <span class="error-message"></span>
-                </div>
-                <button type="submit" class="submit-btn">Зарегистрироваться</button>
-            </form>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <span class="normal">Wishbone</span><span class="bold">+Partners</span>
+    </div>
+
+    <nav class="nav">
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+        <button class="btn">Get template</button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero reveal">
+    <div class="hero-text">
+        <span class="tag">WISHBONE + PARTNERS</span>
+        <h1>The home of<br>beautiful architecture.</h1>
+
+        <p>
+            We are an architecture firm with a focus on beautiful but functional design.
+            At its heart, we believe design is about usability and accessibility — these
+            are the guiding principles for our work.
+        </p>
+
+        <a href="#" class="read-more">Read more</a>
+    </div>
+
+    <div class="hero-image gray-block">
+        <img src="images/IMAGE (1).png" alt="Hero image">
+    </div>
+</section>
+
+<!-- OUR FIRM -->
+<section class="firm reveal">
+    <h2>Our firm</h2>
+
+    <div class="firm-content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+
+        <p>
+            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        </p>
+
+        <p>
+            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean
+            faucibus nibh et justo cursus id rutrum lorem imperdiet.
+        </p>
+
+        <div class="author">
+            <div class="author-image">
+                <img src="images/IMAGE (2).png" alt="Author photo">
+            </div>
+
+            <div class="author-info">
+                <div class="author-name">Stephen Collier</div>
+                <div class="author-role">Senior Partner</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LARGE IMAGE 1 -->
+<section class="big-image reveal">
+    <div class="big-img gray-block">
+        <img src="images/IMAGE (3).png" alt="Large image 1">
+    </div>
+
+    <div class="big-image-text">
+        <span class="small-tag">REEDING HOUSE</span>
+        <p>Lorem ipsum dolor sit amet, dolor sit amet dolor sit amet.</p>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process reveal">
+    <span class="process-tag">OUR PROCESS</span>
+    <h2>How we do what we do.</h2>
+
+    <div class="process-steps">
+
+        <div class="step">
+            <div class="icon">
+                <img src="images/Sketching-Icon.png" alt="Sketching icon">
+            </div>
+            <h3>Sketching</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut tristique libero.</p>
+        </div>
+
+        <div class="step">
+            <div class="icon">
+                <img src="images/Landing-page.png" alt="Finalizing icon">
+            </div>
+            <h3>Finalizing</h3>
+            <p>Adipiscing elit. Nulla ut tristique libero. Nulla vitae tempor leo iaculis luctus.</p>
+        </div>
+
+        <div class="step">
+            <div class="icon">
+                <img src="images/Building-Icon.png" alt="Building icon">
+            </div>
+            <h3>Building</h3>
+            <p>Nulla ut tristique libero. Lorem ipsum dolor sit amet libero nulla vitae tempor.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LARGE IMAGE 2 -->
+<section class="big-image reveal">
+    <div class="big-img gray-block">
+        <img src="images/IMAGE (4).png" alt="Large image 2">
+    </div>
+
+    <div class="big-image-text">
+        <span class="small-tag">THE MARBLE STAIRCASE</span>
+        <p>Lorem ipsum dolor sit amet, dolor sit amet dolor sit amet.</p>
+    </div>
+</section>
+
+<!-- CUSTOMERS -->
+<section class="customers reveal">
+    <div class="customers-left">
+        <span class="small-tag">PRIOR CLIENTS</span>
+        <h2>Happy customers.</h2>
+
+        <p>
+            Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
+            Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+        </p>
+    </div>
+
+    <div class="customers-logos">
+        <div class="logo-block"><img src="images/Logo-Group-3.png" alt="Logo"></div>
+        <div class="logo-block"><img src="images/IMAGE (6).png" alt="Logo"></div>
+        <div class="logo-block"><img src="images/IMAGE (5).png" alt="Logo"></div>
+        <div class="logo-block"><img src="images/Logo-Group-6.png" alt="Logo"></div>
+    </div>
+</section>
+
+<!-- LARGE IMAGE 3 -->
+<section class="big-image_2 reveal">
+    <div class="big-img gray-block">
+        <img src="images/IMAGE (7).png" alt="Large image 3">
+    </div>
+
+    <div class="big-image-text">
+        <span class="small-tag">THE SWIRLING STAIRCASE</span>
+        <p>Lorem ipsum dolor sit amet, dolor sit amet dolor sit amet.</p>
+    </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="featured reveal">
+    <h2>Featured projects</h2>
+    <p>Some of the latest and greatest projects from us here at Wishbone+Partners.</p>
+
+    <div class="featured-row">
+
+        <div class="project-card">
+            <img src="images/Frame.png" alt="Project 1">
+        </div>
+
+        <div class="project-card mid">
+            <img src="images/IMAGE (8).png" alt="Project 2">
+
+            <div class="card-text">
+                <span class="small-tag">NEW YORK</span>
+                <h3>Big Road Brewery</h3>
+            </div>
+
+            <div class="read-more-btn">
+                <span>Read more</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/IMAGE (9).png" alt="Project 3">
+        </div>
+
+    </div>
+
+    <div class="view-all">View all projects</div>
+</section>
+
+<!-- TEAM -->
+<section class="team reveal">
+    <div class="team-left">
+        <h2>Meet our team</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            tristique. Duis cursus, mi quis viverra ornare.
+        </p>
+
+        <div class="see-team">See team</div>
+    </div>
+
+    <div class="team-right">
+
+        <div class="col">
+            <div class="member">
+                <img src="images/IMAGE (10).png" class="member-photo">
+                <div class="member-name">Stephen Collier</div>
+                <div class="member-role">Senior Partner</div>
+            </div>
+
+            <div class="member">
+                <img src="images/IMAGE (11).png" class="member-photo">
+                <div class="member-name">Nolan Peters</div>
+                <div class="member-role">Associate</div>
+            </div>
+
+            <div class="member">
+                <img src="images/IMAGE (12).png" class="member-photo">
+                <div class="member-name">Ferris Wonder</div>
+                <div class="member-role">Associate Partner</div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="member">
+                <img src="images/IMAGE (13).png" class="member-photo">
+                <div class="member-name">Aria Stone</div>
+                <div class="member-role">Senior Partner</div>
+            </div>
+
+            <div class="member">
+                <img src="images/IMAGE (14).png" class="member-photo">
+                <div class="member-name">Niko Ferry</div>
+                <div class="member-role">Partner</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta reveal">
+    <div class="cta-left">
+        <div class="cta-tag">GET IN TOUCH</div>
+        <div class="cta-text">Think we would be a good fit for your next project?</div>
+    </div>
+
+    <a href="#" class="cta-btn">Get in touch</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer reveal">
+    <div class="footer-left">
+        <div class="footer-logo">
+            Wishbone+<span>Partners</span>
+        </div>
+
+        <div class="footer-text">
+            <div>Powered by Webflow.</div>
+            <div>All rights reserved Wishbone+Partners, Inc. Licensing.</div>
         </div>
     </div>
 
-    <!-- Модальное окно при успешной регистрации -->
-    <div id="successModal" class="modal">
-        <div class="modal-content">
-            <div class="success-icon">✓</div>
-            <h3>Успешная регистрация!</h3>
-            <p>Ваш аккаунт был успешно создан.</p>
-            <button id="closeModal">Закрыть</button>
-        </div>
+    <div class="footer-logos">
+        <img src="images/Frame (1).png" alt="">
+        <img src="images/Frame (2).png" alt="">
+        <img src="images/Frame (3).png" alt="">
     </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
